@@ -3,3 +3,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* Header Section */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 0.5rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5rem;
+}
