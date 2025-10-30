@@ -12,6 +12,13 @@
       href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
       rel="stylesheet" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -23,21 +30,21 @@
           <p>Brookside Bakery</p>
         </div>
 
-        <label class="hamburger-menu">
-          <input type="checkbox" />
-          <!-- Use checkbox b/c we're not using any JS, so a checkbox is a great way to check if something's being clicked and to toggle between an open and closed state -->
-        </label>
+        <nav>
+          <label class="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+            <input type="checkbox" />
+            <i class="fa-solid fa-xmark"></i>
+            <!-- Use checkbox b/c we're not using any JS, so a checkbox is a great way to check if something's being clicked and to toggle between an open and closed state -->
+          </label>
 
-        <aside class="sidebar">
-          <nav>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Special Orders</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </aside>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Special Orders</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
       </div>
 
       <div class="hero-container">
