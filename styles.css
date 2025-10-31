@@ -7,11 +7,12 @@
 }
 
 :root {
-  --bar-width: 60px;
-  --bar-height: 8px;
-  --hamburger-gap: 6px;
-  --foreground: #333;
-  --background: white;
+  --color-primary: #6096ba;
+  --color-primary-dark: #304b5d;
+  --color-primary-light: #90b6cf;
+  --color-secondary: #540b0e;
+  --color-secondary-dark: #3b080a;
+  --color-secondary-light: #875456;
 }
 
 /* Header Section */
@@ -22,8 +23,8 @@
 
 /* Base styles */
 nav {
-  background: #333;
   color: #fff;
+  background-color: var(--color-primary-dark);
   padding: 1rem;
   position: relative;
   display: inline-block;
@@ -34,7 +35,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #333;
+  background-color: var(--color-primary-dark);
   color: white;
   padding: 1rem 1.5rem;
 }
@@ -91,7 +92,7 @@ nav ul {
   list-style: none;
   display: none;
   flex-direction: column;
-  background: #333;
+  background: var(--color-primary-dark);
   position: absolute;
   top: 60px;
   left: 0;
@@ -104,7 +105,7 @@ nav ul li a {
   text-decoration: none;
   padding: 1rem;
   display: block;
-  transition: var(--background) 0.3s ease;
+  transition: #333 0.3s ease;
 }
 
 nav ul li a:hover {
