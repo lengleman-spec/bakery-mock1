@@ -15,60 +15,84 @@
 }
 
 /* Header Section */
+/* Hide checkbox */
+#check-box {
+  display: none;
+}
+
+/* Base styles */
 nav {
   background: #333;
   color: #fff;
   padding: 1rem;
   position: relative;
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0.5rem;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 0.5rem;
+  z-index: 10;
 }
 
 .hamburger-menu {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.hamburger-menu input {
-  display: none;
-  /* Hides the checkbox  */
-}
-
+/* Show only bars by default */
 .hamburger-menu .fa-xmark {
   display: none;
-  /* Hides the X by default */
 }
 
-.hamburger-menu input:checked ~ .fa-bars {
+/* Swap icons when checked */
+#check-box:checked + .hamburger-menu .fa-bars {
   display: none;
 }
-
-.hamburger-menu input:checked ~ .fa-xmark {
+#check-box:checked + .hamburger-menu .fa-xmark {
   display: inline;
 }
 
+/* Hide menu by default */
 nav ul {
   list-style: none;
+  display: none;
+  flex-direction: column;
+  background: #333;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
-/* .hamburger-menu::before,
-.hamburger-menu::after,
-.hamburger-menu input {
-  content: "";
-  width: var(--bar-width);
-  height: var(--bar-height);
-  background-color: var(--foreground);
-} */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: lightcoral;
+}
+
+/* ✅ Show menu when checked */
+#check-box:checked ~ ul {
+  display: flex;
+}
+/* Media Queries */
+@media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  nav ul {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  nav ul li a {
+    padding: 0.75rem 1rem;
+  }
+}

@@ -6,13 +6,6 @@
     <title>Brookside Bakery</title>
 
     <link
-      href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
-      rel="stylesheet" />
-    <link
-      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
-      rel="stylesheet" />
-
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -26,14 +19,15 @@
     <header>
       <div class="navbar-container">
         <div class="logo-container">
-          <i class="bx bx-coffee-beans"></i>
+          <i class="fa-solid fa-cookie-bite"></i>
           <p>Brookside Bakery</p>
         </div>
 
         <nav>
-          <label class="hamburger-menu">
+          <input type="checkbox" id="check-box" />
+          <label for="check-box" class="hamburger-menu">
             <i class="fa-solid fa-bars"></i>
-            <input type="checkbox" />
+
             <i class="fa-solid fa-xmark"></i>
             <!-- Use checkbox b/c we're not using any JS, so a checkbox is a great way to check if something's being clicked and to toggle between an open and closed state -->
           </label>
