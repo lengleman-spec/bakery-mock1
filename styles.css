@@ -16,6 +16,16 @@
   --color-off-white: #f3e8e8;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  font-size: 40px;
+}
+
 /* Header Section */
 /* Hide checkbox */
 #check-box {
@@ -129,6 +139,7 @@ nav ul li a:hover {
   justify-content: space-around;
   align-items: center;
   background-color: var(--color-off-white);
+  width: 100%;
 }
 
 .hero-container img {
@@ -160,8 +171,20 @@ nav ul li a:hover {
   }
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .hero-container {
     gap: 2rem;
+  }
+
+
+} */
+
+@media (max-width: 576px) {
+  .hero-container {
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 26px;
   }
 }
