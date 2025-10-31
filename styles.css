@@ -119,12 +119,27 @@ nav ul li a:hover {
   display: flex;
 }
 
+.fa-bars {
+  font-size: 1.9rem;
+}
+
 /* ---- HERO SECTION ---- */
 .hero-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: var(--color-off-white);
+}
+
+.hero-container img {
+  margin: 2rem;
+  border-radius: 18%;
+  height: 300px;
+  width: auto;
+}
+
+.hero-text {
+  padding: 1rem;
 }
 
 /*----------------- Media Queries ----------------- */
