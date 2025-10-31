@@ -13,6 +13,7 @@
   --color-secondary: #540b0e;
   --color-secondary-dark: #3b080a;
   --color-secondary-light: #875456;
+  --color-off-white: #f3e8e8;
 }
 
 /* Header Section */
@@ -118,6 +119,14 @@ nav ul li a:hover {
   display: flex;
 }
 
+/* ---- HERO SECTION ---- */
+.hero-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-off-white);
+}
+
 /*----------------- Media Queries ----------------- */
 @media (min-width: 768px) {
   .hamburger-menu {
@@ -133,5 +142,11 @@ nav ul li a:hover {
 
   nav ul li a {
     padding: 0.75rem 1rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .hero-container {
+    gap: 2rem;
   }
 }
