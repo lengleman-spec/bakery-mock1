@@ -28,7 +28,7 @@ h1 {
 }
 
 section {
-  height: 300px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@ section {
 .wave {
   width: 100%;
   position: relative;
-  top: -50px;
+  top: -80px;
   height: 100px;
   background: #4da6ff;
   clip-path: path("M0,60 C360,140 720,-20 1080,60 L1080,100 L0,100 Z");
@@ -203,12 +203,38 @@ nav ul li a:hover {
 .best-sellers {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  background-color: var(--color-primary-light);
+  padding: 3rem 1rem;
+  text-align: center;
 }
 
 .best-sellers h2 {
-  font-size: 20px;
+  font-size: 22px;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
+}
+
+.best-seller-container {
+  display: flex;
+  flex-wrap: wrap; /* lets images wrap instead of overflow */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px; /* optional, keeps things from stretching too wide */
+  margin-bottom: 2rem;
+}
+
+.best-sellers img {
+  width: 100%;
+  max-width: 220px; /* each image stays inside section */
+  /* height: auto; */
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
 }
 
 /*----------------- Media Queries ----------------- */
