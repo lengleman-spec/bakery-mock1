@@ -197,6 +197,11 @@ nav ul li a:hover {
   border-radius: 16px;
 }
 
+/* Best Sellers Section */
+.best-sellers h2 {
+  font-size: 20px;
+}
+
 /*----------------- Media Queries ----------------- */
 /* "From 768px and larger..." */
 @media (min-width: 768px) {
