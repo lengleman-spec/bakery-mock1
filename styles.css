@@ -7,8 +7,8 @@
 }
 
 :root {
-  --color-primary: #6096ba;
-  --color-primary-dark: #304b5d;
+  --color-primary: #4f7c9b;
+  --color-primary-dark: #253b49;
   --color-primary-light: #90b6cf;
   --color-secondary: #540b0e;
   --color-secondary-dark: #3b080a;
@@ -18,6 +18,11 @@
 
 body {
   font-family: "Inter", sans-serif;
+  background: var(--color-off-white);
+}
+
+img {
+  display: block;
 }
 
 h1 {
@@ -49,7 +54,7 @@ section {
   position: relative;
   top: -80px;
   height: 100px;
-  background: #4da6ff;
+  background: var(--color-primary);
   clip-path: path("M0,60 C360,140 720,-20 1080,60 L1080,100 L0,100 Z");
 }
 
@@ -169,6 +174,8 @@ nav ul li a:hover {
   background-color: var(--color-off-white);
   width: 100%;
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-container img {
@@ -204,9 +211,10 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--color-primary-light);
+  /* background-color: var(--color-primary-light); */
   padding: 3rem 1rem;
   text-align: center;
+  margin-top: 0;
 }
 
 .best-sellers h2 {
@@ -214,7 +222,6 @@ nav ul li a:hover {
   margin-bottom: 2rem;
   margin-top: 4rem;
   color: var(--color-primary-dark);
-  background-color: var(--color-primary-light);
 }
 
 .best-seller-container {
@@ -235,6 +242,10 @@ nav ul li a:hover {
   border-radius: 12px;
   object-fit: cover;
   display: block;
+}
+
+.card-text {
+  font-size: 1.1rem;
 }
 
 /*----------------- Media Queries ----------------- */
