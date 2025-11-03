@@ -52,7 +52,7 @@ section {
 .wave {
   width: 100%;
   position: relative;
-  top: -80px;
+  top: -100px;
   height: 100px;
   background: var(--color-primary);
   clip-path: path("M0,60 C360,140 720,-20 1080,60 L1080,100 L0,100 Z");
@@ -171,7 +171,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--color-off-white);
+  background-color: #c2baba;
   width: 100%;
   height: 100vh;
   margin: 0;
@@ -220,7 +220,7 @@ nav ul li a:hover {
 .best-sellers h2 {
   font-size: 22px;
   margin-bottom: 2rem;
-  margin-top: 4rem;
+  margin-top: 9rem;
   color: var(--color-primary-dark);
 }
 
@@ -229,7 +229,7 @@ nav ul li a:hover {
   flex-wrap: wrap; /* lets images wrap instead of overflow */
   justify-content: center;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 3rem;
   width: 100%;
   max-width: 1000px; /* optional, keeps things from stretching too wide */
   margin-bottom: 2rem;
@@ -246,6 +246,9 @@ nav ul li a:hover {
 
 .card-text {
   font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-primary-dark);
+  margin: 1rem 0;
 }
 
 /*----------------- Media Queries ----------------- */
