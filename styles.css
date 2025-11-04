@@ -251,6 +251,17 @@ nav ul li a:hover {
   margin: 1rem 0;
 }
 
+.btn-bs {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.6rem 1.3rem;
+  border: none;
+  border-radius: 16px;
+  background: var(--color-primary);
+  color: var(--color-off-white);
+}
+
 /*----------------- Media Queries ----------------- */
 /* "From 768px and larger..." */
 @media (min-width: 768px) {
