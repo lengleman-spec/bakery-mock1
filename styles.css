@@ -6,11 +6,6 @@
   box-sizing: border-box;
 }
 
-img {
-  height: 300px;
-  width: 300px;
-}
-
 body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
@@ -26,6 +21,7 @@ header {
   align-items: center;
   padding: 1rem;
   position: relative;
+  z-index: 1000;
 }
 
 .logo {
@@ -96,7 +92,17 @@ header {
   display: inline;
 }
 
+/* HERO SECTION */
+.hero-container {
+  display: flex;
+}
+
+.hero-container img {
+  height: 300px;
+  width: 300px;
+}
 /* ===== DESKTOP VIEW ===== */
+
 @media (min-width: 768px) {
   .hamburger {
     display: none;
