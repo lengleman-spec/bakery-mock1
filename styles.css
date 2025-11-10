@@ -103,19 +103,20 @@ header {
 }
 
 /* ================= HERO SECTION ================= */
-.hero-container {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  /* text-align: center; */
   padding: 2rem 1rem;
   gap: 1.5rem;
 }
 
-.hero-container img {
+.hero img {
   max-width: 100%;
   height: auto;
+  width: 300px;
   border-radius: 12px;
 }
 
@@ -183,7 +184,7 @@ header {
 /* ================= SPECIAL ORDERS ================= */
 section {
   padding: 3rem 1rem;
-  text-align: center;
+  text-align: left;
 }
 
 section img {
