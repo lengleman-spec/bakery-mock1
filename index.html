@@ -23,42 +23,40 @@
 
   <body>
     <header>
-      <div class="navbar-container">
-        <div class="logo-container">
-          <i class="fa-solid fa-cookie-bite"></i>
-          <p>Brookside Bakery</p>
-        </div>
+      <h1 class="logo">MySite</h1>
 
-        <nav>
-          <input type="checkbox" id="check-box" />
-          <label for="check-box" class="hamburger-menu">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-xmark"></i>
-            <!-- Use checkbox b/c we're not using any JS, so a checkbox is a great way to check if something's being clicked and to toggle between an open and closed state -->
-          </label>
+      <!-- Hidden checkbox controls menu -->
+      <input type="checkbox" id="menu-toggle" />
 
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Special Orders</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      <!-- Label acts as the hamburger button -->
+      <label for="menu-toggle" class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+      </label>
 
-      <div class="hero-container">
-        <img
-          src="img/wedding_shower.jpg"
-          alt="a spread of wedding shower
+      <!-- Navigation -->
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero-container">
+      <img
+        src="img/wedding_shower.jpg"
+        alt="a spread of wedding shower
         cookies" />
 
-        <div class="hero-text">
-          <h1>Crafting small batch pastries with big flavor</h1>
-          <p>A neighborhood bakery dedicated to simple, honest ingredients.</p>
-          <button type="button">About Us</button>
-        </div>
+      <div class="hero-text">
+        <h1>Crafting small batch pastries with big flavor</h1>
+        <p>A neighborhood bakery dedicated to simple, honest ingredients.</p>
+        <button type="button">About Us</button>
       </div>
-    </header>
+    </div>
 
     <div class="wave"></div>
 
