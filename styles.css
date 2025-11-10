@@ -1,3 +1,4 @@
+/* ================= GLOBAL RESET ================= */
 *,
 *::before,
 *::after {
@@ -10,23 +11,26 @@ body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
   background: #f3e8e8;
+  line-height: 1.5;
 }
 
-/* ===== HEADER ===== */
+/* ================= HEADER ================= */
 header {
   background-color: #253b49;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   position: relative;
   z-index: 1000;
+  flex-wrap: wrap; /* allows wrapping on very narrow screens */
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: 600;
+  flex-shrink: 0;
 }
 
 /* Hide checkbox */
@@ -34,20 +38,26 @@ header {
   display: none;
 }
 
-/* Hamburger icon styles */
+/* Hamburger icon */
 .hamburger {
-  cursor: pointer;
-  font-size: 1.8rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
   z-index: 1001;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }
 
 .hamburger .fa-xmark {
   display: none;
 }
 
-/* Nav menu - hidden by default (mobile view) */
+/* ================= NAVIGATION ================= */
+/* Mobile: hidden by default, overlays below header */
 .nav-links {
   display: none;
   flex-direction: column;
@@ -57,6 +67,7 @@ header {
   left: 0;
   width: 100%;
   text-align: center;
+  z-index: 1000;
 }
 
 .nav-links ul {
@@ -78,46 +89,133 @@ header {
   background-color: #4f7c9b;
 }
 
-/* When checked → show menu */
+/* Show nav when checkbox is checked */
 #menu-toggle:checked ~ .nav-links {
   display: flex;
 }
 
-/* Swap icons when checked */
+/* Swap hamburger/X icons */
 #menu-toggle:checked + .hamburger .fa-bars {
   display: none;
 }
-
 #menu-toggle:checked + .hamburger .fa-xmark {
   display: inline;
 }
 
-/* HERO SECTION */
+/* ================= HERO SECTION ================= */
 .hero-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
 }
 
 .hero-container img {
-  height: 300px;
-  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
-/* ===== DESKTOP VIEW ===== */
 
+.hero-text h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text button {
+  background-color: #253b49;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.hero-text button:hover {
+  background-color: #4f7c9b;
+}
+
+/* ================= BEST SELLERS ================= */
+.best-sellers {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.best-seller-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.bs-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-text {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: #253b49;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #4f7c9b;
+}
+
+/* ================= SPECIAL ORDERS ================= */
+section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+}
+
+/* ================= MEDIA QUERIES ================= */
+
+/* Tablet & up */
 @media (min-width: 768px) {
+  /* Hide hamburger on desktop */
   .hamburger {
     display: none;
   }
 
+  /* Show nav inline */
   .nav-links {
     display: flex !important;
+    position: static; /* override mobile absolute */
     flex-direction: row;
-    position: static;
     width: auto;
+    background: none;
+    text-align: left;
   }
 
   .nav-links ul {
     display: flex;
     gap: 2rem;
+    justify-content: flex-end; /* align nav items to right */
   }
 
   .nav-links li {
@@ -126,5 +224,42 @@ header {
 
   .nav-links a {
     padding: 0;
+  }
+
+  /* Hero side-by-side */
+  .hero-container {
+    flex-direction: row;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.125rem;
+  }
+}
+
+/* Desktop wide screens */
+@media (min-width: 1024px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Ultra-small screens */
+@media (max-width: 320px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.25rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
   }
 }

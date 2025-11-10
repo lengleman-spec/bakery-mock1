@@ -7,10 +7,7 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,107 +19,117 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="logo">MySite</h1>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive Hamburger Navbar</title>
 
-      <!-- Hidden checkbox controls menu -->
-      <input type="checkbox" id="menu-toggle" />
+        <!-- Font Awesome for Hamburger Icon -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-      <!-- Label acts as the hamburger button -->
-      <label for="menu-toggle" class="hamburger">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-xmark"></i>
-      </label>
+        <link rel="stylesheet" href="styles.css" />
+      </head>
+      <body>
+        <header>
+          <h1 class="logo">MySite</h1>
 
-      <!-- Navigation -->
-      <nav class="nav-links">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+          <!-- Hidden checkbox for toggle -->
+          <input type="checkbox" id="menu-toggle" />
 
-    <div class="hero-container">
-      <img
-        src="img/wedding_shower.jpg"
-        alt="a spread of wedding shower
-        cookies" />
+          <!-- Hamburger button -->
+          <label for="menu-toggle" class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </label>
 
-      <div class="hero-text">
-        <h1>Crafting small batch pastries with big flavor</h1>
-        <p>A neighborhood bakery dedicated to simple, honest ingredients.</p>
-        <button type="button">About Us</button>
-      </div>
-    </div>
+          <!-- Navigation -->
+          <nav class="nav-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
 
-    <div class="wave"></div>
+        <section class="hero">
+          <img src="img/wedding_shower.jpg" alt="wedding shower cookies" />
+          <h1>Welcome to MySite</h1>
+          <p>Responsive navbar example with mobile-first design</p>
+        </section>
 
-    <!-- Best Sellers Section -->
-    <section class="best-sellers">
-      <h2>Check Out Our <span>Best Sellers</span></h2>
+        <div class="wave"></div>
 
-      <div class="best-seller-container">
-        <div class="bs-card">
-          <img
-            src="img/cheesecake_rasp.jpg"
-            alt="raspberry cheesecake"
-            height="200px"
-            width="200px" />
-          <p class="card-text">Raspberry Cheesecake</p>
-        </div>
+        <!-- Best Sellers Section -->
+        <section class="best-sellers">
+          <h2>Check Out Our <span>Best Sellers</span></h2>
 
-        <div class="bs-card">
-          <img
-            src="img/orange_cardamom_cakes.jpg"
-            alt="orange cardamom cakes"
-            height="200px"
-            width="200px" />
-          <p class="card-text">Orange Cardamom Cakes</p>
-        </div>
+          <div class="best-seller-container">
+            <div class="bs-card">
+              <img
+                src="img/cheesecake_rasp.jpg"
+                alt="raspberry cheesecake"
+                height="200px"
+                width="200px" />
+              <p class="card-text">Raspberry Cheesecake</p>
+            </div>
 
-        <div class="bs-card">
-          <img
-            src="img/cupcakes_choc.jpg"
-            alt="chocolate cupcakes"
-            height="200px"
-            width="200px" />
-          <p class="card-text">Chocolate Cupcakes</p>
-        </div>
+            <div class="bs-card">
+              <img
+                src="img/orange_cardamom_cakes.jpg"
+                alt="orange cardamom cakes"
+                height="200px"
+                width="200px" />
+              <p class="card-text">Orange Cardamom Cakes</p>
+            </div>
 
-        <div class="bs-card">
-          <img
-            src="img/cookies_easter_eggs.jpg"
-            alt="easter cookies"
-            height="200px"
-            width="200px" />
-          <p class="card-text">Holiday Themed Cookies</p>
-        </div>
-      </div>
+            <div class="bs-card">
+              <img
+                src="img/cupcakes_choc.jpg"
+                alt="chocolate cupcakes"
+                height="200px"
+                width="200px" />
+              <p class="card-text">Chocolate Cupcakes</p>
+            </div>
 
-      <button class="btn btn-bs">See More</button>
-    </section>
+            <div class="bs-card">
+              <img
+                src="img/cookies_easter_eggs.jpg"
+                alt="easter cookies"
+                height="200px"
+                width="200px" />
+              <p class="card-text">Holiday Themed Cookies</p>
+            </div>
+          </div>
 
-    <!-- Special Orders Section -->
-    <section>
-      <div>
-        <h2>Special Orders</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum
-          fugiat, vel harum nemo suscipit itaque soluta explicabo quaerat
-          laudantium ab sunt molestiae saepe est enim velit earum dolorem
-          cumque!
-        </p>
-        <button class="btn">Place An Order</button>
+          <button class="btn btn-bs">See More</button>
+        </section>
 
-        <img
-          src="img/cookies_wedding.jpg"
-          alt="wedding cookies"
-          height="200px"
-          width="200px" />
-      </div>
-    </section>
+        <!-- Special Orders Section -->
+        <section>
+          <div>
+            <h2>Special Orders</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
+              cum fugiat, vel harum nemo suscipit itaque soluta explicabo
+              quaerat laudantium ab sunt molestiae saepe est enim velit earum
+              dolorem cumque!
+            </p>
+            <button class="btn">Place An Order</button>
+
+            <img
+              src="img/cookies_wedding.jpg"
+              alt="wedding cookies"
+              height="200px"
+              width="200px" />
+          </div>
+        </section>
+      </body>
+    </html>
   </body>
 </html>
