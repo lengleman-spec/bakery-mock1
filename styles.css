@@ -113,7 +113,9 @@ header {
   gap: 1.5rem;
 }
 
-.hero img {
+.hero-img {
+  display: block;
+  margin: 0 auto;
   max-width: 100%;
   height: auto;
   width: 300px;
@@ -122,6 +124,7 @@ header {
 
 .hero-text h1 {
   font-size: 1.5rem;
+  margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
 
