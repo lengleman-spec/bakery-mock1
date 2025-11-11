@@ -10,11 +10,21 @@
 /* ================= CUSTOM VARIABLES ================= */
 /* Add custom color palette */
 :root {
-  --primary-dark: #253b49;
-  --primary-light: #90b6cf;
-  --secondary-dark: #b47a4d;
-  --secondary-light: #f4a261;
-  --white: #e6e2dc;
+  --primary: #253b49;
+  --primary-light: #3b5666;
+  --primary-dark: #1a2a33;
+  --primary-shade: #90b6cf;
+  --primary-shade-light: #9cccec;
+  --primary-shade-dark: #6d93aa;
+  --secondary: #b47a4d;
+  --secondary-light: #d19a6e;
+  --secondary-dark: #8e5e38;
+  --tertiary: #f4a261;
+  --tertiary-light: #f7b783;
+  --tertiary-dark: #d8844b;
+  --gray: #e6e2dc;
+  --gray-light: #f2efeb;
+  --gray-dark: #cbc6bf;
 }
 
 body {
@@ -212,18 +222,22 @@ section img {
 .text-btn-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 .so-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .so-header {
-  color: #b47a4d;
+  color: var(--secondary-dark);
 }
+
+/* ================= CUSTOMER FEEDBACK ================= */
 
 /* ================= MEDIA QUERIES ================= */
 
