@@ -7,6 +7,16 @@
   box-sizing: border-box;
 }
 
+/* ================= CUSTOM VARIABLES ================= */
+/* Add custom color palette */
+:root {
+  --primary-dark: #253b49;
+  --primary-light: #90b6cf;
+  --secondary-dark: #b47a4d;
+  --secondary-light: #f4a261;
+  --white: #e6e2dc;
+}
+
 body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
@@ -138,9 +148,9 @@ header {
   color: white;
   border: none;
   padding: 0.75rem 1.25rem;
-  border-radius: 6px;
   cursor: pointer;
 }
+
 .hero-text button:hover {
   background-color: #4f7c9b;
 }
@@ -148,7 +158,7 @@ header {
 /* ================= BEST SELLERS ================= */
 .best-sellers {
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .best-seller-container {
@@ -176,10 +186,11 @@ header {
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 20px;
   margin-top: 2rem;
   cursor: pointer;
 }
+
 .btn:hover {
   background-color: #4f7c9b;
 }
@@ -207,6 +218,11 @@ section img {
 .so-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.so-header {
+  color: #b47a4d;
 }
 
 /* ================= MEDIA QUERIES ================= */
