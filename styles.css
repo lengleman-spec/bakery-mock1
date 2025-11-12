@@ -175,6 +175,8 @@ header {
 .best-sellers {
   text-align: center;
   padding: 2rem 1rem;
+  background-color: var(--primary-light);
+  border-radius: 10px;
 }
 
 .best-seller-container {
@@ -297,11 +299,10 @@ address {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .footer-icons p {
-  padding: 0.5rem 0;
   font-size: 1.1rem;
 }
 
