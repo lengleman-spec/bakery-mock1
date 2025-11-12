@@ -8,7 +8,7 @@
 }
 
 /* ================= CUSTOM VARIABLES ================= */
-/* Add custom color palette */
+
 :root {
   --primary: #253b49;
   --primary-light: #3b5666;
@@ -26,6 +26,12 @@
   --gray-light: #f2efeb;
   --gray-dark: #cbc6bf;
 }
+
+/* BASE FONT SIZES */
+/* 1rem (16px)
+  1.2rem (19.2px)
+  1.5rem (24px)
+  2rem (32px) */
 
 body {
   font-family: "Inter", sans-serif;
@@ -273,18 +279,37 @@ footer h2 {
 
 address {
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .footer-p {
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .phone-container,
-.address-container {
+.address-container,
+.footer-icons {
   margin: 1rem;
 }
+
+.footer-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.footer-icons p {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.fa-brands {
+  font-size: 1.8rem;
+  margin: 0 0.1rem;
+}
+
 /* ================= MEDIA QUERIES ================= */
 
 /* Tablet & up */
