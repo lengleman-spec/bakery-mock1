@@ -142,7 +142,7 @@ header {
   border-radius: 12px;
 }
 
-.hero-text h1 {
+.hero-text h2 {
   font-size: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
@@ -238,7 +238,8 @@ section img {
 }
 
 /* ================= CUSTOMER FEEDBACK ================= */
-
+/* COME BACK TO THIS SECTION TO ADD THE
+REVIEW SLIDER */
 .review-section {
   background: var(--primary-light);
   text-align: center;
@@ -263,6 +264,27 @@ blockquote {
   padding: 1rem;
 }
 
+/* ================= FOOTER ================= */
+
+footer h2 {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+address {
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.footer-p {
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.phone-container,
+.address-container {
+  margin: 1rem;
+}
 /* ================= MEDIA QUERIES ================= */
 
 /* Tablet & up */
