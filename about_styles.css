@@ -40,6 +40,10 @@ body {
   line-height: 1.5;
 }
 
+section {
+  margin: 2rem 0;
+}
+
 /* ================= HEADER ================= */
 header {
   background-color: #253b49;
@@ -140,11 +144,12 @@ header {
 
 .hero h2 {
   text-align: center;
+  margin: 1rem 0;
 }
 
 .hero p {
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .mission h2 {
