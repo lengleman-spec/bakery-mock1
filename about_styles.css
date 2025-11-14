@@ -198,3 +198,12 @@ header {
   max-width: 350px;
   margin-left: 25%;
 }
+
+/* ========== CALL TO ACTION SECTION ========== */
+.cta-hero {
+  width: 100%;
+  height: 70vh;
+  background-image: url(img/cookies_sunflower.jpg);
+  background-size: cover;
+  background-position: center;
+}
