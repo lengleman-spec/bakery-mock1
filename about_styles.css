@@ -230,3 +230,28 @@ header {
   padding: 1rem 1.5rem;
   cursor: pointer;
 }
+
+/* ========== FOOTER SECTION ========== */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: last baseline;
+}
+
+.social-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.address-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+address p {
+  margin: 0.25rem 0;
+}
