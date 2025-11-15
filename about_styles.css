@@ -206,4 +206,25 @@ header {
   background-image: url(img/cookies_sunflower.jpg);
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.cta-hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 18px;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
 }
