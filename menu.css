@@ -178,12 +178,19 @@ li a {
 }
 
 /* ================= MENU SECTION ================= */
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .cookie-section {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
+  margin: 2rem;
 }
 
 .card {
@@ -194,6 +201,7 @@ li a {
   width: 200px;
   height: 200px;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .card-btn {
@@ -203,4 +211,8 @@ li a {
   border-radius: 18px;
   padding: 0.75rem 1.25rem;
   cursor: pointer;
+}
+
+.card h4 {
+  margin: 0.5rem 0;
 }
