@@ -229,7 +229,8 @@ h3 {
 
 /* Container for cards */
 .cookie-section,
-.cake-section {
+.cake-section,
+.pie-section {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
