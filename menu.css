@@ -186,8 +186,7 @@ h3 {
 
 .cookie-section {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
   margin: 2rem;
@@ -195,6 +194,7 @@ h3 {
 
 .card {
   text-align: center;
+  flex: 1 1 calc(25% - 2rem);
 }
 
 .card-img {
