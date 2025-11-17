@@ -178,49 +178,6 @@ li a {
 }
 
 /* ================= MENU SECTION ================= */
-/* h3 {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.cookie-section,
-.cake-section {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin: 2rem;
-}
-
-.card {
-  text-align: center;
-  flex: 1 1 calc(25% - 2rem);
-}
-
-.card-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 20px;
-}
-
-.card-btn {
-  background-color: #253b49;
-  color: white;
-  border: none;
-  border-radius: 18px;
-  padding: 0.75rem 1.25rem;
-  cursor: pointer;
-}
-
-.card h4 {
-  margin: 0.5rem 0;
-} */
-
-/* ================= MENU SECTION ================= */
-/* ================= MENU SECTION ================= */
 h3 {
   font-size: 1.5rem;
   text-align: center;
@@ -236,7 +193,7 @@ h3 {
   gap: 2rem;
   justify-content: flex-start;
   align-items: stretch; /* important for equal heights */
-  margin: 2rem;
+  padding: 2rem;
 }
 
 /* Individual cards */
@@ -244,7 +201,7 @@ h3 {
   display: flex;
   flex-direction: column; /* stack image, title, button */
   justify-content: space-between; /* button pinned bottom */
-  flex: 0 1 100%; /* mobile first: 1 column */
+  flex: 0 1 100%;
   max-width: 100%;
   text-align: center;
   box-sizing: border-box;
