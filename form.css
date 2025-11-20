@@ -179,44 +179,52 @@ input {
 
 /* ========== DROPDOWN FORM ========== */
 .dropdown {
-  display: inline-block;
+  display: block;
   position: relative;
+  width: 100%;
+  margin: 1rem 0;
 }
 
 .dropbtn {
+  display: block;
+  padding: 0.5rem 1rem;
   width: 100%;
 
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--primary-dark);
   border-radius: 8px;
   font-size: 1rem;
-  background: var(--primary-shade-dark);
+  background: white;
+  cursor: pointer;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--primary-shade-light);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: #1a2a33;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: var(--gray-dark);
+  background-color: var(--primary-shade-light);
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+.dropbtn {
+  background-color: white;
+  color: #555;
+  text-align: start;
+}
 /* =====================================================
    === FIRST BREAKPOINT: 540px → 768px ONLY ===
    ===================================================== */
