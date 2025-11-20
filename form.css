@@ -177,6 +177,46 @@ input {
   color: #555;
 }
 
+/* ========== DROPDOWN FORM ========== */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropbtn {
+  width: 100%;
+
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary-dark);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: var(--primary-shade-dark);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primary-shade-light);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #1a2a33;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--gray-dark);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* =====================================================
    === FIRST BREAKPOINT: 540px → 768px ONLY ===
    ===================================================== */
