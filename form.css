@@ -221,9 +221,26 @@ input {
 }
 
 .dropbtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
   background-color: white;
   color: #555;
   text-align: start;
+}
+
+.arrow {
+  width: 20px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.btn-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 /* =====================================================
    === FIRST BREAKPOINT: 540px → 768px ONLY ===
