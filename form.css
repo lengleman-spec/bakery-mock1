@@ -167,7 +167,7 @@ input {
 }
 
 .input-container label {
-  position: absolute;
+  position: absolute; /* Use absolute so that it can be positioned inside the input field at the top left hand corner */
   top: 6px;
   left: 12px;
   font-size: 0.85rem;
@@ -242,6 +242,17 @@ input {
   align-items: center;
   justify-content: space-between;
 }
+
+.input-group-sm {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.input-sm {
+  width: 100%;
+}
+
 /* =====================================================
    === FIRST BREAKPOINT: 540px → 768px ONLY ===
    ===================================================== */
