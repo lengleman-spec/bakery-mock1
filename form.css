@@ -296,6 +296,47 @@ textarea {
   transition: background-color 0.3s ease;
   width: 150px;
 }
+
+/* ================= FOOTER ================= */
+
+footer h2 {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+address {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.footer-p {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.phone-container,
+.address-container,
+.footer-icons {
+  margin: 1rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.footer-icons p {
+  font-size: 1.1rem;
+}
+
+.fa-brands {
+  font-size: 1.8rem;
+  margin: 0 0.1rem;
+  color: #1a2a33;
+}
+
 /* =====================================================
    === FIRST BREAKPOINT: 540px → 768px ONLY ===
    ===================================================== */
