@@ -144,6 +144,7 @@ form {
   min-width: 400px;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .header-text {
@@ -284,6 +285,17 @@ textarea {
   text-align: center;
 }
 
+#submit-form {
+  background-color: #253b49;
+  color: white;
+  border: none;
+  border-radius: 32px;
+  padding: 0.25rem 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px;
+}
 /* =====================================================
    === FIRST BREAKPOINT: 540px → 768px ONLY ===
    ===================================================== */
