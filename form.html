@@ -42,66 +42,79 @@
     </header>
 
     <form action="">
-      <div class="header-text">
-        <h2>Special Order Form</h2>
-        <p>
-          Please fill out the form and someone from our team will get back to
-          you within 24 hours.
-        </p>
-      </div>
-
-      <div class="input-group">
-        <div class="input-container">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+      <div class="form-container">
+        <div class="header-text">
+          <h2>Special Order Form</h2>
+          <p>
+            Please fill out the form and someone from our team will get back to
+            you within 24 hours.
+          </p>
         </div>
 
-        <div class="input-container">
-          <label for="telephone">Phone Number</label>
-          <input type="tel" id="telephone" name="telephone" required />
+        <div class="input-group">
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="input-container">
+            <label for="telephone">Phone Number</label>
+            <input type="tel" id="telephone" name="telephone" required />
+          </div>
+
+          <div class="input-container">
+            <label for="telephone">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
         </div>
 
-        <div class="input-container">
-          <label for="telephone">Name</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-      </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Choose a delivery & pick-up options
 
-      <div class="dropdown">
-        <button class="dropbtn">
-          Choose a delivery & pick-up options
+            <img src="img/down_arrow.svg" alt="down arrow" class="arrow" />
+          </button>
 
-          <img src="img/down_arrow.svg" alt="down arrow" class="arrow" />
-        </button>
-
-        <div class="dropdown-content">
-          <a href="#">Pick Up</a>
-          <a href="#">Mailed</a>
-          <a href="#">Delivery</a>
-        </div>
-      </div>
-
-      <div class="input-group-sm">
-        <div class="input-container">
-          <label for="address-1">Address 1</label>
-          <input type="text" id="address-1" class="input-sm" />
+          <div class="dropdown-content">
+            <a href="#">Pick Up</a>
+            <a href="#">Mailed</a>
+            <a href="#">Delivery</a>
+          </div>
         </div>
 
-        <div class="input-container">
-          <label for="address-2">Address 2</label>
-          <input type="text" id="address-2" class="input-sm" />
-        </div>
-      </div>
+        <div class="input-group-sm">
+          <div class="input-container">
+            <label for="address-1">Address 1</label>
+            <input type="text" id="address-1" class="input-sm" />
+          </div>
 
-      <div class="input-group-second">
-        <div class="input-container">
-          <label for="city">City</label>
-          <input type="text" id="city" class="input-sm" />
+          <div class="input-container">
+            <label for="address-2">Address 2</label>
+            <input type="text" id="address-2" class="input-sm" />
+          </div>
         </div>
 
-        <div class="input-container">
-          <label for="zip-code">Zip Code</label>
-          <input type="text" id="zip-code" class="input-sm" />
+        <div class="input-group-second">
+          <div class="input-container">
+            <label for="city">City</label>
+            <input type="text" id="city" class="input-sm" />
+          </div>
+
+          <div class="input-container">
+            <label for="zip-code">Zip Code</label>
+            <input type="text" id="zip-code" class="input-sm" />
+          </div>
+        </div>
+
+        <div class="input-container order-details">
+          <label for="order-details">Order Details</label>
+          <div class="text-area-div">
+            <textarea
+              name="order-details"
+              id="order-details"
+              rows="10"
+              cols="42"></textarea>
+          </div>
         </div>
       </div>
     </form>

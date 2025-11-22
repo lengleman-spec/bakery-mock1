@@ -140,6 +140,12 @@ form {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.form-container {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
 .header-text {
   text-align: center;
   margin-bottom: 1rem;
@@ -258,6 +264,24 @@ input {
 
 .input-sm {
   width: 100%;
+}
+
+/* ---------- ORDER DETAILS ---------- */
+
+.order-details {
+  margin-top: 1rem;
+}
+
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  width: 100%;
+}
+
+.text-area-div {
+  text-align: center;
 }
 
 /* =====================================================
