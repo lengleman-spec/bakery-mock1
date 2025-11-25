@@ -44,6 +44,12 @@ section {
   margin: 2rem 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ================= HEADER ================= */
 header {
   background-color: #253b49;
@@ -60,7 +66,7 @@ header {
 .logo {
   font-size: 1.5rem;
   font-weight: 600;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 /* Hide checkbox */
@@ -78,8 +84,9 @@ header {
   color: white;
   z-index: 1001;
   width: 40px;
+  min-width: 0;
   height: 40px;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 .hamburger .fa-xmark {
@@ -95,7 +102,7 @@ header {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   z-index: 1000;
 }
@@ -135,10 +142,10 @@ header {
 /* -------- HERO SECTION --------*/
 
 .hero-img {
-  display: block;
-  width: 450px;
+  width: 90%; /* or 100% max width */
+  max-width: 450px; /* keeps image from getting huge on tablet */
   height: auto;
-  border-radius: 20px;
+  display: block;
   margin: 2rem auto;
 }
 
@@ -181,6 +188,12 @@ header {
 }
 
 .promise img {
+  width: 90%;
+  max-width: 400px;
+  margin: 2rem auto; /* centers */
+}
+
+/* .promise img {
   width: 70%;
   height: auto;
   border-top-left-radius: 20px;
@@ -191,7 +204,7 @@ header {
   margin-left: 30%;
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
+} */
 
 .promise p {
   text-align: start;
@@ -269,3 +282,5 @@ address a {
   font-size: 1.2rem;
   margin-right: 0.5rem;
 }
+
+/* ================= MEDIA QUERIES ================= */
